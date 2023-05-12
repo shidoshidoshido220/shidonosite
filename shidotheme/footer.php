@@ -4,7 +4,6 @@ Theme Name : shidonotheme
 ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 //フッター
 ?>
-</div>
 <footer>
         <ul class="footermenu">
             <li><a href="<?php echo home_url(); ?>">TOP</a></li>

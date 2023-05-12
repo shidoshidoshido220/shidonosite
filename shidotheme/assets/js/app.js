@@ -15,3 +15,59 @@ $('.slide-items').slick({
     dots: true,
     arrows: true,
 });
+
+
+
+var window_h = $(window).height();
+$("#wh span").text(window_h);
+$(window).on("scroll", function() {
+  var scroll_top = $(window).scrollTop();
+  $("#scroll span").text(scroll_top);
+
+  $(".fadein01").each(function() {
+    var elem_pos = $(this).offset().top;
+    $(this).find(".fadein_pos span").text(Math.floor(elem_pos));
+  
+    if (scroll_top >= elem_pos - window_h+200) {
+      $(this).addClass("fadein-after");
+    } else {
+      $(this).removeClass("fadein-after");
+    }
+  });
+});
+
+var window_h = $(window).height();
+$("#wh span").text(window_h);
+$(window).on("scroll", function() {
+  var scroll_top = $(window).scrollTop();
+  $("#scroll span").text(scroll_top);
+
+  $(".fadein02").each(function() {
+    var elem_pos = $(this).offset().top;
+    $(this).find(".fadein_pos span").text(Math.floor(elem_pos));
+  
+    if (scroll_top >= elem_pos - window_h+200) {
+      $(this).addClass("fadein-after");
+    } else {
+      $(this).removeClass("fadein-after");
+    }
+  });
+});
+
+var window_h = $(window).height();
+$("#wh span").text(window_h);
+$(window).on("scroll", function() {
+  var scroll_top = $(window).scrollTop();
+  $("#scroll span").text(scroll_top);
+
+  $(".fadein03").each(function() {
+    var elem_pos = $(this).offset().top;
+    $(this).find(".fadein_pos span").text(Math.floor(elem_pos));
+  
+    if (scroll_top >= elem_pos - window_h+200) {
+      $(this).addClass("fadein-after");
+    } else {
+      $(this).removeClass("fadein-after");
+    }
+  });
+});
