@@ -7,6 +7,7 @@ Theme Name : shidonotheme
 echo get_template_part('include/head');
 ?>
 
+
 <body id="body">
     <header>
         <ul id="gMenu" class="PC">
@@ -45,17 +46,20 @@ echo get_template_part('include/head');
             <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/main03.jpg" alt=""></div>
             <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/main04.jpg" alt=""></div>
         </div>
+        <div class="wrapper">
         <div class="inner">
         <?php elseif(is_page()): ?>
         <div class="<?php echo get_post_field( 'post_name', get_the_ID() ); ?> headimage">
             <h1><?php the_title(); ?></h1>
         </div>
+        <div class="wrapper">
         <div class="inner">
             <?php echo get_template_part('include/bread'); ?>
         <?php elseif(is_archive()): ?>
         <div class="<?php echo get_post_field( 'post_name', get_the_ID() ); ?> headimage">
             <h1>ブログ</h1>
         </div>
+        <div class="wrapper">
         <div class="inner">
             <?php echo get_template_part('include/bread'); ?>
         <?php endif; ?>
